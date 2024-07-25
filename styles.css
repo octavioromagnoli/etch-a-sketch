@@ -7,10 +7,9 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  margin: 20px auto;
 }
 
-.squareDiv{
-  height: 30px;
-  width: 30px;
-  border: 1px solid;
+.selected {
+  background-color: aquamarine;
 }
