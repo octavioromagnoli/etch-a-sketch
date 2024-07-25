@@ -11,8 +11,16 @@ function createSquares(mainContainer, amount, height, borderPx) {
   }
 }
 
+function setNewCanvas() {
+  const mainContainer = document.querySelector(".main-container");
+  let amount = parseInt(document.querySelector(".amountInput").value);
+  let size = parseInt(document.querySelector(".sizeInput").value);
+  let borderSize = parseInt(document.querySelector(".borderInput").value);
+  createSquares(mainContainer, amount, size, borderSize);
+}
+
 const mainContainer = document.querySelector(".main-container");
-createSquares(mainContainer, 14, 30, 3);
+createSquares(mainContainer, 11, 30, 3);
 
 mainContainer.addEventListener("mousemove", (event) =>{
   let target = event.target;
@@ -21,3 +29,5 @@ mainContainer.addEventListener("mousemove", (event) =>{
   }
 })
 
+const applyButton = document.querySelector(".applyButton");
+applyButton.addEventListener("click", setNewCanvas)
