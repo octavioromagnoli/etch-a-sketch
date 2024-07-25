@@ -1,0 +1,16 @@
+*{
+  margin: 0px;
+  padding: 0px;
+}
+
+.main-container{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.squareDiv{
+  height: 30px;
+  width: 30px;
+  border: 1px solid;
+}
